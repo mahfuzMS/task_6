@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom";
 import { io } from "socket.io-client";
 import MarkdownIt from "markdown-it";
 
-const socket = io("http://localhost:5000");
+//const socket = io("http://localhost:5000");
+const socket = io("https://presentation-frontend-y2va.onrender.com");
 const markdown = new MarkdownIt();
 
 const PresentationEditor = ({ username }) => {
